@@ -84,9 +84,9 @@ class Red{
       ab = atan2(b[bi].y - y, b[bi].x - x);
     }
 
-    x += -2.5 + (Math.random()*5) - cos(ab)/((bclose+1)/20);
+    x += -2.5 + (Math.random()*5) - cos(ab)/((bclose+1)/25);
     if (greens != 0){x+=cos(ag);}
-    y += -2.5 + (Math.random()*5) - sin(ab)/((bclose+1)/20);
+    y += -2.5 + (Math.random()*5) - sin(ab)/((bclose+1)/25);
     if (greens != 0){y+=sin(ag);}
     
     if (x < 5) x = 5;
@@ -145,9 +145,9 @@ class Green{
       ar = atan2(r[ri].y - y, r[ri].x - x);
     }
     
-    x += -2.5 + (Math.random()*5) - cos(ar)/((rclose+1)/20);
+    x += -2.5 + (Math.random()*5) - cos(ar)/((rclose+1)/25);
     if (blues != 0){x+=cos(ab);}
-    y += -2.5 + (Math.random()*5) - sin(ar)/((rclose+1)/20);
+    y += -2.5 + (Math.random()*5) - sin(ar)/((rclose+1)/25);
     if (blues != 0){y+=sin(ab);}
     
     if (x < 5) x = 5;
@@ -204,9 +204,9 @@ class Blue{
       ag = atan2(g[gi].y - y, g[gi].x - x);
     }
     
-    x += -2.5 + (Math.random()*5) - cos(ag)/((gclose+1)/20);
+    x += -2.5 + (Math.random()*5) - cos(ag)/((gclose+1)/25);
     if (reds != 0){x += cos(ar);}
-    y += -2.5 + (Math.random()*5) - sin(ag)/((gclose+1)/20);
+    y += -2.5 + (Math.random()*5) - sin(ag)/((gclose+1)/25);
     if (reds != 0){y += sin(ar);}
     
     if (x < 5) x = 5;
